@@ -1,31 +1,24 @@
-// let array = [2,1,4,3,7,5,6,6];
+let array = [1,6,3,20,5,3];
+let sortedArray = [ ];
 
-// let array =[7,2,3,4,5,6,1];
-
-let array = [6,4,8,18,7,10,14];
-
-for(let i = 0 ; i < array.length -1 ; i++){
-      
-    let min = i ;
-     
-
-        for(let j = i+1 ; j < array.length ; j++){
-       
-            if(array[j] < array[min]  ){
-              min = j ;
-
-            }
-        }
-
-        if(min != i ){
-           let temp = array[i] ;
-           array[i] =  array[min] ;
-           array[min] = temp;
-        }
-   
+for( let  i=0;i<array.length;i++){
+  let min = array[i];
   
-
-
-   console.log(array);
-   
+  for(let j=i+1; j< array.length ; j++ ){
+     if(min > array[j] ){
+       let temp = min ;
+       min = array[j] ;
+       array[j] = temp ; 
+       console.log(min);
+     }
+     
+     
+  }
+  
+  sortedArray.push(min);
+  
+  
+  
 }
+
+console.log(sortedArray);
