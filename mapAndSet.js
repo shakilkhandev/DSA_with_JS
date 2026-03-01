@@ -15,5 +15,8 @@ myMap.set("lastName", "Khan");
 console.log(myMap.get("id")); 
 
 
-
+//map is iterable  but plain object does not have built in iterability
+//map key types in map can be anydata type but in object it is string or symbol only
+//map key are ordered by insertion  
+//map do not have a default keys like object has prototype keys
 
